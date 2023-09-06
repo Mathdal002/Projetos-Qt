@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidgetDados">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>731</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <column>
+     <property name="text">
+      <string>MATRICULA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string notr="true">NOME</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DEPARTAMENTO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TITULAÇÃO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TIPO DE CONTATO</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBuscar">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Busca</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>741</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>FORMAS DE ORDENAÇÃO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxOrdenacao">
+       <item>
+        <property name="text">
+         <string>MATRICULA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOME</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DEPARTAMENTO - NOME</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TITULAÇÃO - NOME</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DEPARTAMENTO  - TITULAÇÃO - NOME</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DEPARTAMENTO - TIPO DE CONTRATO - NOME</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>671</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>DADO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditDado"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>BUSCA SEQUENCIAL - NOME</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BUSCA SEQUENCIAL - MATRICULA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BUSCA BINÁRIA - NOME</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BUSCA BINÁRIA - MATRICULA</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
